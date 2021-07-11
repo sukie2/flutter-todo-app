@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_todo_app1/screens/add_task_screen.dart';
-import 'package:flutter_todo_app1/widgets/task_tile.dart';
+import 'package:flutter_todo_app1/widgets/tasks_list.dart';
 
 class TasksScreen extends StatelessWidget {
   @override
@@ -16,7 +16,9 @@ class TasksScreen extends StatelessWidget {
                     child: Container(
                       padding: EdgeInsets.only(
                           bottom: MediaQuery.of(context).viewInsets.bottom),
-                      child: AddTaskScreen(),
+                      child: Column(
+                        children: [AddTaskScreen()],
+                      ),
                     ),
                   ),
               isScrollControlled: true);
@@ -27,34 +29,32 @@ class TasksScreen extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.only(top: 60, left: 30, bottom: 30, right: 30),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                CircleAvatar(
-                  radius: 30,
-                  backgroundColor: Colors.white,
-                  child: Icon(
-                    Icons.list,
-                    size: 40,
-                    color: Colors.blueAccent,
-                  ),
+            child:
+                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              CircleAvatar(
+                radius: 30,
+                backgroundColor: Colors.white,
+                child: Icon(
+                  Icons.list,
+                  size: 40,
+                  color: Colors.blueAccent,
                 ),
-                Divider(),
-                Text(
-                  'Todo app',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 40,
-                      fontWeight: FontWeight.w700),
-                ),
-                Divider(height: 5),
-                Text(
-                  '12 tasks',
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
+              ),
+              Divider(),
+              Text(
+                'Todo app',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 40,
+                    fontWeight: FontWeight.w700),
+              ),
+              Divider(height: 5),
+              Text(
+                '12 tasks',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+            ]),
           ),
           Expanded(
             child: Container(
@@ -65,13 +65,7 @@ class TasksScreen extends StatelessWidget {
                   topRight: Radius.circular(20),
                 ),
               ),
-              child: ListView(
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                children: [
-                  TaskTile(),
-                  TaskTile(),
-                ],
-              ),
+              child: TasksList(),
             ),
           ),
         ],
