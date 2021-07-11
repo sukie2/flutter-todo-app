@@ -3,14 +3,41 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="23b6fd38-cff3-497c-b0e9-9f03cdee1249" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/screens/tasks_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,5 +84,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1162" height="214" key="GridCell.Tab.0.bottom" timestamp="1625969019308">
+      <screen x="58" y="25" width="1734" height="1095" />
+    </state>
+    <state width="1162" height="214" key="GridCell.Tab.0.bottom/58.25.1734.1095@58.25.1734.1095" timestamp="1625969019308" />
+    <state width="1162" height="214" key="GridCell.Tab.0.center" timestamp="1625969019308">
+      <screen x="58" y="25" width="1734" height="1095" />
+    </state>
+    <state width="1162" height="214" key="GridCell.Tab.0.center/58.25.1734.1095@58.25.1734.1095" timestamp="1625969019308" />
+    <state width="1162" height="214" key="GridCell.Tab.0.left" timestamp="1625969019307">
+      <screen x="58" y="25" width="1734" height="1095" />
+    </state>
+    <state width="1162" height="214" key="GridCell.Tab.0.left/58.25.1734.1095@58.25.1734.1095" timestamp="1625969019307" />
+    <state width="1162" height="214" key="GridCell.Tab.0.right" timestamp="1625969019308">
+      <screen x="58" y="25" width="1734" height="1095" />
+    </state>
+    <state width="1162" height="214" key="GridCell.Tab.0.right/58.25.1734.1095@58.25.1734.1095" timestamp="1625969019308" />
   </component>
 </project>
