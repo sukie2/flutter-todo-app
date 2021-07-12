@@ -1,16 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_todo_app1/models/task.dart';
 import 'package:flutter_todo_app1/screens/add_task_screen.dart';
 import 'package:flutter_todo_app1/widgets/tasks_list.dart';
 
-class TasksScreen extends StatelessWidget {
+class TasksScreen extends StatefulWidget {
+  @override
+  _TasksScreenState createState() => _TasksScreenState();
+}
+
+class _TasksScreenState extends State<TasksScreen> {
+  List<Task> taskList = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blueAccent,
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        onPressed: () {
-          showModalBottomSheet(
+        onPressed: () async {
+          final result = await showModalBottomSheet(
               context: context,
               builder: (context) => SingleChildScrollView(
                     child: Container(
@@ -22,6 +30,9 @@ class TasksScreen extends StatelessWidget {
                     ),
                   ),
               isScrollControlled: true);
+          setState(() {
+            taskList.add(Task(name: result, isDone: false));
+          });
         },
       ),
       body: Column(
@@ -65,7 +76,7 @@ class TasksScreen extends StatelessWidget {
                   topRight: Radius.circular(20),
                 ),
               ),
-              child: TasksList(),
+              child: TasksList(taskList: taskList),
             ),
           ),
         ],
